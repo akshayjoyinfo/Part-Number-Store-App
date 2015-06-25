@@ -1,0 +1,10 @@
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Repository.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Repository.pdb
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Domain.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Logging.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\log4net.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Domain.pdb
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\bin\x86\Debug\Moe3.Logging.pdb
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\obj\x86\Debug\Moe3.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\obj\x86\Debug\Moe3.Repository.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\obj\x86\Debug\Moe3.Repository.pdb

@@ -1,0 +1,8 @@
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\bin\Debug\Moe3.Domain.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\bin\Debug\Moe3.Domain.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\obj\Debug\Moe3.Domain.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\obj\Debug\Moe3.Domain.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\obj\Debug\Moe3.Domain.csprojResolveAssemblyReference.cache
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\bin\Debug\Moe3.Logging.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\bin\Debug\log4net.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Domain\bin\Debug\Moe3.Logging.pdb

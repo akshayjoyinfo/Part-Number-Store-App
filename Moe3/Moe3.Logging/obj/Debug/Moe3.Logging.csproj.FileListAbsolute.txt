@@ -1,0 +1,6 @@
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\obj\Debug\Moe3.Logging.csprojResolveAssemblyReference.cache
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\bin\Debug\Moe3.Logging.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\bin\Debug\Moe3.Logging.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\bin\Debug\log4net.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\obj\Debug\Moe3.Logging.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Logging\obj\Debug\Moe3.Logging.pdb

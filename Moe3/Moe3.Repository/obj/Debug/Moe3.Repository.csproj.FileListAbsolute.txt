@@ -1,0 +1,5 @@
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Repository\bin\Debug\Moe3.Repository.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Repository\bin\Debug\Moe3.Repository.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Repository\obj\Debug\Moe3.Repository.csprojResolveAssemblyReference.cache
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Repository\obj\Debug\Moe3.Repository.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.Repository\obj\Debug\Moe3.Repository.pdb

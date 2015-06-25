@@ -1,0 +1,11 @@
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\Moe3.ScreenUI.exe.config
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\Moe3.ScreenUI.exe
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\Moe3.Domain.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\Moe3.Logging.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\Moe3.Repository.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\bin\x86\Release\log4net.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\obj\x86\Release\Moe3.ScreenUI.csprojResolveAssemblyReference.cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\obj\x86\Release\Moe3.ScreenUI.frmScreenUI.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\obj\x86\Release\Moe3.ScreenUI.Properties.Resources.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\obj\x86\Release\Moe3.ScreenUI.csproj.GenerateResource.Cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\obj\x86\Release\Moe3.ScreenUI.exe
