@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
 using System.Linq;
@@ -318,27 +319,42 @@ namespace Moe3.Repository
                 List<string> columns = GetStoreLocations();
                 string dynamicSQL = "";
                 int colPos = 1;
+                int chunkSize = Convert.ToInt32(ConfigurationManager.AppSettings["LocationChunkSize"]);
                 
-                foreach (var column in columns)
+
+                while (columns.Any())
                 {
-                    string unionQuery = colPos == columns.Count ? "" : " UNION ALL \n";
-                    dynamicSQL = dynamicSQL + " SELECT '" + column + "' AS Location , " + column +
-                                 " AS Qty FROM Inventory where PartNumber='" + item.PartNumber + "' AND Version =" +
-                                 item.Version
-                                 + unionQuery;
-                    colPos++;
+                    List<string> listGroupColumns = new List<string>();
+                    listGroupColumns = columns.Take(chunkSize).ToList();
+                    columns = columns.Skip(chunkSize).ToList();
+                    dynamicSQL = "";
+                    colPos = 1;
+                    foreach (var column in listGroupColumns)
+                    {
+                        string unionQuery = colPos == listGroupColumns.Count ? "" : " UNION ALL \n";
+                        dynamicSQL = dynamicSQL + " SELECT '" + column + "' AS Location , " + column +
+                                     " AS Qty FROM Inventory where PartNumber='" + item.PartNumber + "' AND Version =" +
+                                     item.Version
+                                     + unionQuery;
+                        colPos++;
+                       
+
+
+                    }
+                    OleDbCommand sqlCommand = new OleDbCommand();
+                    sqlCommand.CommandText = dynamicSQL;
+                    sqlCommand.Connection = repoConnection;
+                    OleDbDataReader reader = sqlCommand.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        LocationQty cls = new LocationQty(reader[0].ToString(), Convert.ToInt32(reader[1].ToString()));
+                        listInventoryItems.Add(cls);
+                    }
 
                 }
 
-                OleDbCommand sqlCommand = new OleDbCommand();
-                sqlCommand.CommandText = dynamicSQL;
-                sqlCommand.Connection = repoConnection;
-                OleDbDataReader reader = sqlCommand.ExecuteReader();
-                while (reader.Read())
-                {
-                    LocationQty cls = new LocationQty(reader[0].ToString(),Convert.ToInt32(reader[1].ToString()));
-                    listInventoryItems.Add(cls);
-                }
+
+              
 
             }
             catch (Exception exp)

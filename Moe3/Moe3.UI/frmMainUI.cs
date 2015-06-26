@@ -274,7 +274,8 @@ namespace Moe3.UI
                 {
                     statusLabel.ForeColor = Color.Red;
                     statusLabel.Text = "No PartNumber Locations availlable";
-                   
+                    MessageBox.Show("Quantity is empty for Given PartNumber and Version","Search - PartNumber Operation",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
                 }
                 int totalQty = listLocations.Sum(x => x.Quantity);
                 listLocations.Add(new LocationQty("Total :- ", totalQty));
@@ -393,6 +394,8 @@ namespace Moe3.UI
         private void gridTimer_Tick(object sender, EventArgs e)
         {
             dgvSearchGrid.DataSource = null;
+            txtRestPartNumber.Clear();
+            txtRestVersion.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)

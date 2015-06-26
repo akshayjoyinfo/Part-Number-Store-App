@@ -1,0 +1,14 @@
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\Moe3.UI.exe.config
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\Moe3.UI.exe
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\Moe3.Domain.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\Moe3.Logging.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\Moe3.Repository.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\bin\x86\Release\log4net.dll
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.csprojResolveAssemblyReference.cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.frmMainUI.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.frmReporting.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.Properties.Resources.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.csproj.GenerateResource.Cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\RdlCompile.cache
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\RdlCompile.compiled
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Release\Moe3.UI.exe

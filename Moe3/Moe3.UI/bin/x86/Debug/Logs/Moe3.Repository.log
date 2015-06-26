@@ -1,0 +1,130 @@
+[2015-06-20 11:56:00] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:00] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:41] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:42] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:44] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:44] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:45] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:45] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:45] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:45] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:45] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:56] - [INFO ] – Opening DB Connection
+[2015-06-20 11:56:56] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:05] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:06] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:06] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:07] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:22] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:22] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305294' AND [Version] = 1
+[2015-06-20 11:57:22] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:22] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:38] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:38] - [INFO ] – Opening DB Connection
+[2015-06-20 11:57:48] - [INFO ] – Opening DB Connection
+[2015-06-20 11:58:34] - [INFO ] – Opening DB Connection
+[2015-06-27 12:47:25] - [INFO ] – Opening DB Connection
+[2015-06-27 12:47:28] - [INFO ] – Opening DB Connection
+[2015-06-27 12:48:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:48:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:48:59] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:04] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:04] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305504' AND [Version] = 1
+[2015-06-27 12:49:11] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:11] - [INFO ] –  AddPartNumber SQL UPDATE  Inventory SET Quantity = Quantity + 10, A1= A1 + 10 WHERE PartNumber = '1038305504' AND Version = 1
+[2015-06-27 12:49:11] - [INFO ] –  AddPartNumber SQL INSERT INTO InventoryDailyFacts (PartNumber,Version,Location,Quantity,TransactionDate,IsAdd) VALUES('1038305504',1,'A1',10,'06/27/2015',1)
+[2015-06-27 12:49:11] - [INFO ] – Plain Query SQL -UPDATE Inventory SET Quantity =  Quantity + 20 ,  A1 = A1 + 20  where PartNumber = 1038407748 AND Version =1
+[2015-06-27 12:49:32] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:52] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 12:49:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:49:54] - [ERROR] – Error while Getting GetPartNumbersByPartNumberVersion - The Microsoft Office Access database engine could not find the object ''.  Make sure the object exists and that you spell its name and the path name correctly. StackTrace:-    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at Moe3.Repository.PartNumberRepository.GetPartNumbersByPartNumberVersion(InventoryItem item) in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\PartNumberRepository.cs:line 336
+[2015-06-27 12:50:19] - [INFO ] – Opening DB Connection
+[2015-06-27 12:50:19] - [INFO ] – Opening DB Connection
+[2015-06-27 12:50:26] - [INFO ] – Opening DB Connection
+[2015-06-27 12:50:26] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 12:50:36] - [INFO ] – Opening DB Connection
+[2015-06-27 12:50:36] - [INFO ] – Opening DB Connection
+[2015-06-27 12:57:44] - [INFO ] – Opening DB Connection
+[2015-06-27 12:57:44] - [INFO ] – Opening DB Connection
+[2015-06-27 12:57:52] - [INFO ] – Opening DB Connection
+[2015-06-27 12:57:52] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 12:57:59] - [INFO ] – Opening DB Connection
+[2015-06-27 12:57:59] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:14] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:14] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:22] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:22] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:29] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:29] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:28:37] - [INFO ] – Opening DB Connection
+[2015-06-27 01:28:38] - [INFO ] – Opening DB Connection
+[2015-06-27 01:30:13] - [INFO ] – Opening DB Connection
+[2015-06-27 01:30:14] - [INFO ] – Opening DB Connection
+[2015-06-27 01:30:27] - [INFO ] – Opening DB Connection
+[2015-06-27 01:30:27] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:30:37] - [INFO ] – Opening DB Connection
+[2015-06-27 01:30:38] - [INFO ] – Opening DB Connection
+[2015-06-27 01:31:44] - [INFO ] – Opening DB Connection
+[2015-06-27 01:31:44] - [INFO ] – Opening DB Connection
+[2015-06-27 01:31:53] - [INFO ] – Opening DB Connection
+[2015-06-27 01:31:53] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:32:09] - [INFO ] – Opening DB Connection
+[2015-06-27 01:32:09] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:24] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:24] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:32] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:32] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:37:39] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:40] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:40] - [INFO ] –  AddPartNumber SQL UPDATE  Inventory SET Quantity = Quantity + 10, A1= A1 + 10 WHERE PartNumber = '1038305320' AND Version = 1
+[2015-06-27 01:37:40] - [INFO ] –  AddPartNumber SQL INSERT INTO InventoryDailyFacts (PartNumber,Version,Location,Quantity,TransactionDate,IsAdd) VALUES('1038305320',1,'A1',10,'06/27/2015',1)
+[2015-06-27 01:37:40] - [INFO ] – Plain Query SQL -UPDATE Inventory SET Quantity =  Quantity + 20 ,  A1 = A1 + 20  where PartNumber = 1038407748 AND Version =1
+[2015-06-27 01:37:49] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:49] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:37:54] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:54] - [INFO ] – Opening DB Connection
+[2015-06-27 01:37:54] - [INFO ] –  AddPartNumber SQL UPDATE  Inventory SET Quantity = Quantity + 40, A11= A11 + 40 WHERE PartNumber = '1038305320' AND Version = 1
+[2015-06-27 01:37:54] - [INFO ] –  AddPartNumber SQL INSERT INTO InventoryDailyFacts (PartNumber,Version,Location,Quantity,TransactionDate,IsAdd) VALUES('1038305320',1,'A11',40,'06/27/2015',1)
+[2015-06-27 01:37:55] - [INFO ] – Plain Query SQL -UPDATE Inventory SET Quantity =  Quantity + 20 ,  A1 = A1 + 20  where PartNumber = 1038407748 AND Version =1
+[2015-06-27 01:38:02] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:02] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-06-27 01:38:05] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:05] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:16] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:16] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 20
+[2015-06-27 01:38:34] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:34] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 343
+[2015-06-27 01:38:47] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:47] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 2
+[2015-06-27 01:38:50] - [INFO ] – Opening DB Connection
+[2015-06-27 01:38:50] - [INFO ] – Opening DB Connection
+[2015-06-27 01:40:43] - [INFO ] – Opening DB Connection
+[2015-06-27 01:40:43] - [INFO ] – Opening DB Connection
+[2015-06-27 01:40:59] - [INFO ] – Opening DB Connection
+[2015-06-27 01:40:59] - [INFO ] – Opening DB Connection
+[2015-06-27 01:41:07] - [INFO ] – Opening DB Connection
+[2015-06-27 01:41:07] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 3
+[2015-06-27 01:41:07] - [INFO ] – Opening DB Connection
+[2015-06-27 01:41:07] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:18] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:18] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:24] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:24] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 2
+[2015-06-27 01:42:24] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:24] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:45] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:45] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:52] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:52] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 2
+[2015-06-27 01:42:52] - [INFO ] – Opening DB Connection
+[2015-06-27 01:42:52] - [INFO ] – Opening DB Connection
+[2015-06-27 01:43:50] - [INFO ] – Opening DB Connection

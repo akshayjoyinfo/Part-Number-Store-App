@@ -1,0 +1,25 @@
+[2015-06-20 11:56:00] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-20 11:56:56] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-20 11:57:38] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 12:47:25] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 12:48:52] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 12:49:54] - [ERROR] – Error while Searching Location vise Part Numbers - The Microsoft Office Access database engine could not find the object ''.  Make sure the object exists and that you spell its name and the path name correctly. StackTrace:-    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at Moe3.Repository.PartNumberRepository.GetPartNumbersByPartNumberVersion(InventoryItem item) in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\PartNumberRepository.cs:line 348
+   at Moe3.UI.frmMainUI.btnSearch_Click(Object sender, EventArgs e) in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\frmMainUI.cs:line 272
+[2015-06-27 12:50:19] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 12:57:44] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:28:14] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:28:22] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:30:13] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:31:44] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:37:24] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:40:43] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:40:59] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:42:18] - [INFO ] – Moe3 Application Initialized !!
+[2015-06-27 01:42:45] - [INFO ] – Moe3 Application Initialized !!

@@ -1,0 +1,16 @@
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.UI.exe.config
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.UI.exe
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.UI.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.csprojResolveAssemblyReference.cache
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.Properties.Resources.resources
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.csproj.GenerateResource.Cache
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.exe
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\obj\Debug\Moe3.UI.frmMainUI.resources
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Domain.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Logging.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Repository.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\log4net.dll
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Domain.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Logging.pdb
+c:\Users\akshay-dx\documents\visual studio 2013\Projects\Moe3\Moe3.UI\bin\Debug\Moe3.Repository.pdb
