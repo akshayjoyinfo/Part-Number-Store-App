@@ -17,3 +17,7 @@ C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\De
 C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\RdlCompile.compiled
 C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.exe
 C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.pdb
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.frmAdmin.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.frmAdminPanel.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.frmAuthentiation.resources
+C:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\obj\x86\Debug\Moe3.UI.frmLiveStock.resources

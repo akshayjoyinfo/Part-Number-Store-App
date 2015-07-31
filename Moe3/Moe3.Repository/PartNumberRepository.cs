@@ -108,6 +108,32 @@ namespace Moe3.Repository
             return status;
         }
 
+        public static bool AddPartNumberAdmin(InventoryItem item)
+        {
+            bool status = false;
+            OleDbConnection repoConnection = null;
+            try
+            {
+                repoConnection = DbConnection.OpenConnection();
+
+                string addPartNumberSQL =
+                    "INSERT INTO Inventory (PartNumber,Version) VALUES('" + item.PartNumber + "'," + item.Version + ")";
+                OleDbCommand sqlCommand = new OleDbCommand();
+                sqlCommand.CommandText = addPartNumberSQL;
+                sqlCommand.Connection = repoConnection;
+                int rows = sqlCommand.ExecuteNonQuery();
+                if (rows > 0)
+                    status = true;
+            }
+            catch (Exception exp)
+            {
+                RepoLogger.LogMsg(LogModes.REPO, LogLevel.ERROR,
+                    "Error while adding AddPartNumberAdmin- " + exp.Message + " StackTrace:- " + exp.StackTrace);
+                status = false;
+                throw;
+            }
+            return status;
+        }
         public static List<string> GetStoreLocations()
         {
             List<string> listColumns = new List<string>();
@@ -143,6 +169,79 @@ namespace Moe3.Repository
             }
             return listColumns;
         
+        }
+
+        public static bool ValidateAdminUser(string user, string pass)
+        {
+            bool valid = false;
+            OleDbConnection repoConnection = null;
+            try
+            {
+                repoConnection = DbConnection.OpenConnection();
+                var cmd =
+                    new OleDbCommand(
+                        "SELECT count(*) from Logins where Username='" + user + "' AND Password='" + pass + "'",
+                        repoConnection);
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count > 0)
+                {
+                    valid = true;
+                }
+                else
+                {
+                    valid = false;
+                }
+            }
+            catch (Exception exp)
+            {
+                RepoLogger.LogMsg(LogModes.REPO, LogLevel.ERROR,
+                  "Error while Getting GetStoreLocations - " + exp.Message + " StackTrace:- " + exp.StackTrace);
+                throw;
+            }
+            finally
+            {
+                DbConnection.CloseConnection(repoConnection);
+            }
+            return valid;
+
+
+
+        }
+        public static bool ValidateAdminOtp(string otpPass)
+        {
+            bool valid = false;
+            OleDbConnection repoConnection = null;
+            try
+            {
+                repoConnection = DbConnection.OpenConnection();
+                var cmd =
+                    new OleDbCommand(
+                        "SELECT count(*) from Logins where OneTimePassword='" + otpPass + "'",
+                        repoConnection);
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count > 0)
+                {
+                    valid = true;
+                }
+                else
+                {
+                    valid = false;
+                }
+            }
+            catch (Exception exp)
+            {
+                RepoLogger.LogMsg(LogModes.REPO, LogLevel.ERROR,
+                  "Error while Getting GetStoreLocations - " + exp.Message + " StackTrace:- " + exp.StackTrace);
+                throw;
+            }
+            finally
+            {
+                DbConnection.CloseConnection(repoConnection);
+            }
+            return valid;
+
+
+
         }
 
         public static List<string> GetPartNumbers()
@@ -220,7 +319,7 @@ namespace Moe3.Repository
             try
             {
                 List<string> listLocation = GetStoreLocations();
-                status = listLocation.Exists(x => x == item.Location);
+                status = listLocation.Exists(x => x.ToLower() == item.Location.ToLower());
             }
             catch (Exception exp)
             {
@@ -242,7 +341,7 @@ namespace Moe3.Repository
             {
                 repoConnection = DbConnection.OpenConnection();
                 List<string> columns = GetStoreLocations();
-                string dynamicSQL = "SELECT  PartNumber, Version , Quantity FROM Inventory WHERE Quantity > 0 ORDER BY PartNumber ASC";
+                string dynamicSQL = "SELECT  PartNumber, Version , Quantity , SUM(LEFTOVERA) + SUM(LEFTOVERB) + SUM(LEFTOVERC) + SUM(LEFTOVERD) AS LeftOver FROM Inventory WHERE Quantity > 0 GROUP BY PartNumber, Version , Quantity ORDER BY PartNumber ASC";
 
 
                 OleDbCommand sqlCommand = new OleDbCommand();
@@ -251,7 +350,7 @@ namespace Moe3.Repository
                 OleDbDataReader reader = sqlCommand.ExecuteReader();
                 while (reader.Read())
                 {
-                    InventoryItem cls = new InventoryItem(reader["PartNumber"].ToString(), Convert.ToInt32(reader["Version"].ToString()),Convert.ToInt32(reader["Quantity"].ToString()));
+                    InventoryItem cls = new InventoryItem(reader["PartNumber"].ToString(), Convert.ToInt32(reader["Version"].ToString()), Convert.ToInt32(reader["Quantity"].ToString()), Convert.ToInt32(reader["LeftOver"].ToString()));
                     listInventoryItems.Enqueue(cls);
                 }
             }
@@ -388,8 +487,8 @@ namespace Moe3.Repository
 
                 OleDbCommand cmdExcel = new OleDbCommand();
                 cmdExcel.Connection = repoConnection;
-                string SheetName = dtExcelSchema.Rows[0]["TABLE_NAME"].ToString();
-                cmdExcel.CommandText = "ALTER TABLE [" + SheetName + "] ADD COLUMN [" + location + "] VARCHAR(45)";
+                
+                cmdExcel.CommandText = "ALTER TABLE [Inventory] ADD COLUMN [" + location + "] Number DEFAULT 0";
                 cmdExcel.ExecuteNonQuery();
                 status = true;
             }

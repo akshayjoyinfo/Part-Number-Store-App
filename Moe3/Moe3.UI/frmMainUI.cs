@@ -444,8 +444,35 @@ namespace Moe3.UI
 
         private void reportingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmReporting frmObj = new frmReporting();
-            frmObj.Show();
+            frmAdmin frm = new frmAdmin();
+            DialogResult frmResult = frm.ShowDialog();
+
+            if (frm.DialogResult == DialogResult.Yes)
+            {
+                frmReporting rep = new frmReporting();
+                rep.Show();
+            }
+        }
+
+        private void adminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdmin frm = new frmAdmin();
+            
+            DialogResult frmResult  = frm.ShowDialog();
+
+            if (frm.DialogResult == DialogResult.Yes)
+            {
+
+                frmAdminPanel frmPanel = new frmAdminPanel();
+                frmPanel.Show();
+            }
+        }
+
+        private void liveStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLiveStock frmStock=  new frmLiveStock();
+            
+            frmStock.ShowDialog();
         }
 
         

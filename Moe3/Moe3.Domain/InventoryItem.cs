@@ -19,6 +19,8 @@ namespace Moe3.Domain
         [Browsable(false)]
         public string Location { get; set; }
 
+        [DisplayName("LEFT OVER")]
+        public int LeftOver { get; set; }
         public InventoryItem()
         {
             
@@ -38,6 +40,13 @@ namespace Moe3.Domain
             this.Version = ver;
             this.Quantity = qty;
             
+        }
+        public InventoryItem(string pnum, int ver, int qty, int leftover)
+        {
+            this.PartNumber = pnum;
+            this.Version = ver;
+            this.Quantity = qty;
+            this.LeftOver = leftover;
         }
 
         public InventoryItem(string pnum, int ver, int qty, List<InventoryLocation> listLocations )

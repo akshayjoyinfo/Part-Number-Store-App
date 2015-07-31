@@ -60,6 +60,7 @@ namespace Moe3.UI
         {
             string fromDate = Convert.ToDateTime(dtpFrom.Text).ToString("dd/MM/yyyy");
             string endDate = Convert.ToDateTime(dtpTo.Text).ToString("dd/MM/yyyy");
+            
 
             List<InventoryDaiyFact> listDailyFacts = PartNumberRepository.GetInventoryReport(fromDate, endDate);
             reportViewer1.LocalReport.DataSources.Clear(); //clear report

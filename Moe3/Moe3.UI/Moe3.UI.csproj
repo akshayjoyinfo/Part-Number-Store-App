@@ -55,6 +55,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminPanel.Designer.cs">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthentiation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthentiation.Designer.cs">
+      <DependentUpon>frmAuthentiation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiveStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiveStock.Designer.cs">
+      <DependentUpon>frmLiveStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMainUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +93,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPanel.resx">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthentiation.resx">
+      <DependentUpon>frmAuthentiation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiveStock.resx">
+      <DependentUpon>frmLiveStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainUI.resx">
       <DependentUpon>frmMainUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +112,7 @@
       <DependentUpon>frmReporting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryReport.rdlc" />
+    <EmbeddedResource Include="LiveStock.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +123,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Properties\DataSources\Moe3.Domain.InventoryDaiyFact.datasource" />
+    <None Include="Properties\DataSources\Moe3.Domain.InventoryItem.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +152,9 @@
       <Project>{aa9d6291-3eb6-424c-b31b-4ce3b595104f}</Project>
       <Name>Moe3.Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

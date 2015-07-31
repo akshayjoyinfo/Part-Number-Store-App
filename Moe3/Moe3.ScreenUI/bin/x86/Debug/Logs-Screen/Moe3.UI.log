@@ -1,1 +1,33 @@
 [2015-06-27 02:09:26] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 01:41:27] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 01:42:23] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 02:12:28] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 02:37:44] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 05:11:06] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 05:12:58] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 05:13:52] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-27 05:14:11] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:24:30] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:24:31] - [ERROR] – Error GetDataSourceFromDb - You tried to execute a query that does not include the specified expression 'PartNumber' as part of an aggregate function. StackTrace:-    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at Moe3.Repository.PartNumberRepository.GetAllNonZeroItems() in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\PartNumberRepository.cs:line 324
+   at Moe3.ScreenUI.frmScreenUI.GetDataSourceFromDb() in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.ScreenUI\frmScreenUI.cs:line 53
+[2015-06-28 11:24:55] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:26:02] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:27:23] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:28:06] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:31:18] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-28 11:31:27] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-29 07:49:36] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-29 08:01:20] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-30 10:31:37] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-30 10:32:15] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-30 10:39:11] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-06-30 10:44:54] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-07-06 09:24:17] - [INFO ] – Moe3 Screen UI Application Initialized !!
+[2015-07-30 10:31:54] - [INFO ] – Moe3 Screen UI Application Initialized !!

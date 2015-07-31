@@ -72,7 +72,7 @@ namespace Moe3.ScreenUI
 
         private void dataSourceResetTimer_Tick(object sender, EventArgs e)
         {
-            //listInventoryItems = GetDataSourceFromDb();
+            listInventoryItems = GetDataSourceFromDb();
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
