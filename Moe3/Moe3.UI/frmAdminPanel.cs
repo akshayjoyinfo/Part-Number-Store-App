@@ -115,7 +115,17 @@ namespace Moe3.UI
 
                 if (DialogResult.Yes == res)
                 {
-                    
+                    if (PartNumberRepository.ResetInventoryItemsToZero())
+                    {
+                        MessageBox.Show("Successfully Reset Invetory Items", "Reset Inventory", MessageBoxButtons.OK,
+                          MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unable to Reset the Inventory", "Reset Inventory", MessageBoxButtons.OK,
+                          MessageBoxIcon.Error);
+        
+                    }
                 }
             }
 

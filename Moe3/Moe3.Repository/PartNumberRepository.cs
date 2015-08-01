@@ -507,5 +507,36 @@ namespace Moe3.Repository
             return status;
         }
 
+        public static bool ResetInventoryItemsToZero()
+        {
+            bool status = false;
+            OleDbConnection repoConnection = null;
+            try
+            {
+                repoConnection = DbConnection.OpenConnection();
+                List<string> columns = GetStoreLocations();
+                string updateColumns = String.Join("=0 ,",columns );
+
+                string resetBasrQuery = "UPDATE INVENTORY SET Quantity = 0," + updateColumns + " =0";
+
+                OleDbCommand sqlCommand = new OleDbCommand();
+                sqlCommand.CommandText = resetBasrQuery;
+                sqlCommand.Connection = repoConnection;
+                sqlCommand.ExecuteNonQuery();
+                
+                status = true;
+            }
+            catch (Exception exp)
+            {
+                RepoLogger.LogMsg(LogModes.REPO, LogLevel.ERROR,
+                    "Error while Getting AddLocactionColumn - " + exp.Message + " StackTrace:- " + exp.StackTrace);
+                return false;
+            }
+            finally
+            {
+                DbConnection.CloseConnection(repoConnection);
+            }
+            return status;
+        }
     }
 }

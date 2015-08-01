@@ -73,3 +73,18 @@
 [2015-07-30 11:35:35] - [INFO ] – Moe3 Application Initialized !!
 [2015-07-30 11:35:42] - [INFO ] – Moe3 Application Initialized !!
 [2015-07-31 11:44:42] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 11:50:05] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 12:08:22] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 12:11:53] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 12:13:05] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 12:30:12] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 12:37:11] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 03:28:14] - [INFO ] – Moe3 Application Initialized !!
+[2015-08-01 03:29:02] - [ERROR] – Error while Searching Location vise Part Numbers - Input string was not in a correct format. StackTrace:-    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Moe3.UI.frmMainUI.btnSearch_Click(Object sender, EventArgs e) in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\frmMainUI.cs:line 268
+[2015-08-01 03:42:04] - [ERROR] – Error while Searching Location vise Part Numbers - Input string was not in a correct format. StackTrace:-    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Moe3.UI.frmMainUI.btnSearch_Click(Object sender, EventArgs e) in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.UI\frmMainUI.cs:line 268

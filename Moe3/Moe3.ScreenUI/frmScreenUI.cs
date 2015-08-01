@@ -37,11 +37,13 @@ namespace Moe3.ScreenUI
         private void Form1_Load(object sender, EventArgs e)
         {
             listInventoryItems = GetDataSourceFromDb();
-            listInventoryItems.Enqueue(listInventoryItems.Dequeue());
             dataGridView1.Width = gWidth;
             dataGridView1.Height = gHeight;
-            dataGridView1.DataSource = listInventoryItems.ToList();
-            
+            if (listInventoryItems.Count > 0)
+            {
+                listInventoryItems.Enqueue(listInventoryItems.Dequeue());
+                dataGridView1.DataSource = listInventoryItems.ToList();
+            }
         }
 
         private Queue<InventoryItem> GetDataSourceFromDb()
@@ -64,10 +66,12 @@ namespace Moe3.ScreenUI
 
         private void screenTime_Tick(object sender, EventArgs e)
         {
-
-            listInventoryItems.Enqueue(listInventoryItems.Dequeue());
-            dataGridView1.DataSource = listInventoryItems.ToList();
-            dataGridView1.CurrentCell.Selected = false;
+            if (listInventoryItems.Count > 0)
+            {
+                listInventoryItems.Enqueue(listInventoryItems.Dequeue());
+                dataGridView1.DataSource = listInventoryItems.ToList();
+                dataGridView1.CurrentCell.Selected = false;
+            }
         }
 
         private void dataSourceResetTimer_Tick(object sender, EventArgs e)
@@ -105,6 +109,22 @@ namespace Moe3.ScreenUI
             //        Myrow.DefaultCellStyle.BackColor = Color.White;
             //    }
             //}
+        }
+
+        private void dataGridView1_Paint(object sender, PaintEventArgs e)
+        {
+            DataGridView sndr = (DataGridView)sender;
+
+            if (sndr.Rows.Count == 0) // <-- if there are no rows in the DataGridView when it paints, then it will create your message
+            {
+                using (Graphics grfx = e.Graphics)
+                {
+                    // create a white rectangle so text will be easily readable
+                    grfx.FillRectangle(Brushes.White, new Rectangle(new Point(50,50), new Size(sndr.Width-100, 100)));
+                    // write text on top of the white rectangle just created
+                    grfx.DrawString("No Inventory Items availlable", new Font("Arial", 36), Brushes.Red, new PointF(50, 50));
+                }
+            }
         }
     }
 }

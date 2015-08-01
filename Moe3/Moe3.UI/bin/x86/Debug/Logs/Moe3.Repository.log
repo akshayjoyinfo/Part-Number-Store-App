@@ -324,3 +324,59 @@
 [2015-07-31 11:44:42] - [INFO ] – Opening DB Connection
 [2015-07-31 11:44:48] - [INFO ] – Opening DB Connection
 [2015-07-31 11:44:48] - [INFO ] – Opening DB Connection
+[2015-08-01 11:50:05] - [INFO ] – Opening DB Connection
+[2015-08-01 11:50:05] - [INFO ] – Opening DB Connection
+[2015-08-01 11:50:41] - [INFO ] – Opening DB Connection
+[2015-08-01 11:51:19] - [INFO ] – Opening DB Connection
+[2015-08-01 11:51:26] - [INFO ] – Opening DB Connection
+[2015-08-01 11:51:26] - [INFO ] – Opening DB Connection
+[2015-08-01 12:08:22] - [INFO ] – Opening DB Connection
+[2015-08-01 12:08:22] - [INFO ] – Opening DB Connection
+[2015-08-01 12:08:48] - [INFO ] – Opening DB Connection
+[2015-08-01 12:09:15] - [INFO ] – Opening DB Connection
+[2015-08-01 12:09:19] - [INFO ] – Opening DB Connection
+[2015-08-01 12:09:19] - [INFO ] – Opening DB Connection
+[2015-08-01 12:10:42] - [ERROR] – Error while Getting AddLocactionColumn - Syntax error in UPDATE statement. StackTrace:-    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   at Moe3.Repository.PartNumberRepository.ResetInventoryItemsToZero() in c:\Users\Akshay-Dx\Documents\Visual Studio 2013\Projects\Moe3\Moe3.Repository\PartNumberRepository.cs:line 525
+[2015-08-01 12:11:53] - [INFO ] – Opening DB Connection
+[2015-08-01 12:11:53] - [INFO ] – Opening DB Connection
+[2015-08-01 12:12:05] - [INFO ] – Opening DB Connection
+[2015-08-01 12:12:21] - [INFO ] – Opening DB Connection
+[2015-08-01 12:12:24] - [INFO ] – Opening DB Connection
+[2015-08-01 12:12:24] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:05] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:05] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:17] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:32] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:35] - [INFO ] – Opening DB Connection
+[2015-08-01 12:13:35] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:12] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:12] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:33] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:47] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:50] - [INFO ] – Opening DB Connection
+[2015-08-01 12:30:50] - [INFO ] – Opening DB Connection
+[2015-08-01 12:37:11] - [INFO ] – Opening DB Connection
+[2015-08-01 12:37:11] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:14] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:14] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:31] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:31] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-08-01 03:28:51] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:51] - [INFO ] – Opening DB Connection
+[2015-08-01 03:28:51] - [INFO ] –  AddPartNumber SQL UPDATE  Inventory SET Quantity = Quantity + 30, LEFTOVERA= LEFTOVERA + 30 WHERE PartNumber = '1038305320' AND Version = 1
+[2015-08-01 03:28:51] - [INFO ] –  AddPartNumber SQL INSERT INTO InventoryDailyFacts (PartNumber,Version,Location,Quantity,TransactionDate,IsAdd) VALUES('1038305320',1,'LEFTOVERA',30,'08/01/2015',1)
+[2015-08-01 03:28:51] - [INFO ] – Plain Query SQL -UPDATE Inventory SET Quantity =  Quantity + 20 ,  A1 = A1 + 20  where PartNumber = 1038407748 AND Version =1
+[2015-08-01 03:29:29] - [INFO ] – Opening DB Connection
+[2015-08-01 03:29:29] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-08-01 03:29:29] - [INFO ] – Opening DB Connection
+[2015-08-01 03:29:29] - [INFO ] – Opening DB Connection
+[2015-08-01 03:30:10] - [INFO ] – Opening DB Connection
+[2015-08-01 03:30:10] - [INFO ] – SQL :- SELECT count(*) From [Inventory] WHERE  [PartNumber] = '1038305320' AND [Version] = 1
+[2015-08-01 03:30:10] - [INFO ] – Opening DB Connection
+[2015-08-01 03:30:10] - [INFO ] – Opening DB Connection
